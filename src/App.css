@@ -12,6 +12,27 @@ img.img-icon {
   height: auto;
 }
 
+.img-thumb {
+  max-width: 50px;
+  height: auto;
+}
+.card-thumb {
+  max-width: 90px;
+  height: auto;
+}
+.teams-thumb {
+  max-width: 96px;
+  height: auto;
+}
+.footer-thumb {
+  max-width: 24px;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
 .semiBold {
   font-weight: 600 !important;
 }

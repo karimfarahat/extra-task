@@ -12,10 +12,30 @@ export const theme = createTheme({
           fontWeight: "bold", // Override button text color to white
           // backgroundColor: "#ffa62b", // Override button background color to orange
         },
+
+        //apply style only to text button variant
+        text: {
+          padding: 0,
+        },
       },
     },
+    MuiAutocomplete: {
+      styleOverrides: {
+        root: { backgroundColor: "#f9f9f9", color: "#000" },
+        listbox: {
+          backgroundColor: "#ffa62b", // Override button background color to orange
+        },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: { backgroundColor: "#f9f9f9", color: "#000" },
+      },
+    },
+
     MuiTypography: {
       styleOverrides: {
+        //works as class name, and not the css sheet
         semiBold: {
           fontWeight: 600,
         },
@@ -47,5 +67,6 @@ export const theme = createTheme({
     },
     greyColor: "#737373",
     darkBlue: "#252b42",
+    cyanColor: "#16697a",
   },
 });

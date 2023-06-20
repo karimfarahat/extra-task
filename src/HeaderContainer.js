@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 
-import { Stack, Button, Container, Grid } from "@mui/material";
+import { Stack, Button, Container, Box, Grid } from "@mui/material";
 
 import React from "react";
 
@@ -11,34 +11,38 @@ export default function HeaderContainer() {
   return (
     <Grid
       container
+      // spacing={8}
       justifyContent="center"
       alignItems="center"
       item
       sx={{
         position: "relative",
         pt: { xs: 50, sm: 15 },
+        pb: { xs: 30, sm: 15 },
       }}
     >
-      <img
-        src={HeaderImg}
-        // className="img-fluid"
-        style={{
-          zIndex: -1,
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          filter: "brightness(50%)",
-        }}
-      />
+      <Box>
+        <img
+          src={HeaderImg}
+          // className="img-fluid"
+          style={{
+            zIndex: -1,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            filter: "brightness(50%)",
+          }}
+        />
+      </Box>
 
-      <Grid item sm={6}>
+      <Grid item xs={10} sm={6}>
         <Stack
-          // mt={5}
+          mb={10}
           sx={{ justifyContent: "center" }}
           direction="column"
-          //   spacing={"40px"}
+          spacing={"40px"}
         >
           <Typography
             align="center"
@@ -64,9 +68,10 @@ export default function HeaderContainer() {
 
           <Stack
             my={15}
-            sx={{ justifyContent: "center" }}
-            direction="row"
+            sx={{ justifyContent: "center", alignItems: "center" }}
+            direction={{ xs: "column", sm: "row" }}
             spacing={"10px"}
+            // maxWidth={400}
           >
             <Button variant="contained" color="orange">
               Get Quote Now

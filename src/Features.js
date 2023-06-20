@@ -12,12 +12,12 @@ export default function Features() {
       item
       xs={6}
       sm={8}
-      spacing={2}
+      spacing={3}
       container
       justifyContent="center"
       alignItems="center"
       //   alignContent="center"
-      sx={{ mt: { xs: 20, sm: 15 } }}
+      sx={{ mt: { xs: 10, sm: 15 }, mb: 20 }}
     >
       <Grid item xs={12} sm={3}>
         <Stack spacing={2} sx={{ p: 3, backgroundColor: "#fff" }}>
